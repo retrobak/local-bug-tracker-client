@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LocalBugTracker;
+namespace RetroBak\LocalBugTracker;
 
 
 class ClientReporter
