@@ -3,5 +3,10 @@
   "description": "Client for the local bug tracker",
   "support": {
     "email": "w.oostra@edge-it.nl"
+  },
+  "autoload": {
+    "psr-4": {
+      "RetroBak\\LocalBugTracker\\": "src/"
+    }
   }
 }
