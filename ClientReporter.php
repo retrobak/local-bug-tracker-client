@@ -54,6 +54,10 @@ class ClientReporter
      */
     public function submit()
     {
+        if (! $this->getUrl() || count($this->getData()) == 0) {
+            return false;
+        }
+        
         $data_string = json_encode($this->getData());
     
         $ch = curl_init($this->getUrl());
@@ -65,6 +69,7 @@ class ClientReporter
                 'Content-Length: ' . strlen($data_string))
         );
     
-        return curl_exec($ch);
+        $result = curl_exec($ch);
+        return true;
     }
 }
