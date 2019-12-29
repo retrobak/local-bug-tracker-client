@@ -6,11 +6,8 @@ namespace RetroBak\LocalBugTracker;
 
 class ClientReporter
 {
-    const LEVEL_EMERGENCY = 'emergency';
-    const LEVEL_ALERT     = 'alert';
     const LEVEL_CRITICAL  = 'critical';
     const LEVEL_ERROR     = 'error';
-    const LEVEL_WARNING   = 'warning';
     const LEVEL_INFO      = 'info';
     const LEVEL_DEBUG     = 'debug';
     
