@@ -73,6 +73,8 @@ class ClientReporter
                 'Content-Type: application/json',
                 'Content-Length: ' . strlen($data_string))
         );
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2); 
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5); //timeout in seconds
     
         $result = curl_exec($ch);
         return true;
